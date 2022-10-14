@@ -10,4 +10,4 @@ export const FeedbackSection = styled.section`
   text-align: center;
 `;
 
-export const Title = styled.h2``;
+export const Title = styled.h1``;
