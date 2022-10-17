@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { NoFeedback } from './Notification.styled';
 
 export const NoFeedbackMessage = ({ message }) => {
