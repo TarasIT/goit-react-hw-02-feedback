@@ -4,6 +4,9 @@ import { FeedbackButtons, Button } from './FeedbackOptions.styled';
 export const FeedbackOptions = ({ option, onLeaveFeedback }) => {
   const selectedFeedback = e => {
     const feedback = option.find(feedback => e.target.name === feedback);
+    if (feedback === undefined) {
+      return alert('Whoops, something wrong with feedback(');
+    }
     onLeaveFeedback(feedback);
   };
 
